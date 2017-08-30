@@ -26,7 +26,7 @@ router.use(log4js.connectLogger(log4js.getLogger('http'), {
 // router.use('/api', require('./api'));
 
 // todo 路由 - web端页面
-// router.use('/', require('./web'));
+router.use('/', require('./web'));
 
 // 系统错误 - 返回
 router.use((err, req, res, next) => {
